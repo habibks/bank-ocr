@@ -1,5 +1,5 @@
 
-KataBankOCR"
+KataBankOCR
 -------------------
 
 **Problem Description**
