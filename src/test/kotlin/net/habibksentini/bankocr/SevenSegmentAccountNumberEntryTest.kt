@@ -7,7 +7,7 @@ import org.hamcrest.CoreMatchers.`is` as isEqualTo
 class SevenSegmentAccountNumberEntryTest{
 
     @Test
-    fun given_sevenSegmentEntryContainOnlyZeros_then_recognizeAccountNumber(){
+    fun getAccountNumber_given_sevenSegmentEntryContainOnlyZeros_then_recognizeAccountNumber(){
         val line1 : String = " _  _  _  _  _  _  _  _  _ "
         val line2 : String = "| || || || || || || || || |"
         val line3 : String = "|_||_||_||_||_||_||_||_||_|"
