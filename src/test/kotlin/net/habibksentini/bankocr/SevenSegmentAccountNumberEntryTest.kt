@@ -30,7 +30,7 @@ class SevenSegmentAccountNumberEntryTest{
     }
 
     @Test
-    fun parse_given_sevenSegmentEntry_then_return_sevenSegmentCodes(){
+    fun parse_given_sevenSegmentAccountNumberEntry_then_return_sevenSegmentAccountNumber(){
         val line1 : String = "    _  _     _  _  _  _  _ "
         val line2 : String = "  | _| _||_||_ |_   ||_||_|"
         val line3 : String = "  ||_  _|  | _||_|  ||_| _|"
