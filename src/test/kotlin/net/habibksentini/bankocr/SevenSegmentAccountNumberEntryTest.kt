@@ -17,5 +17,16 @@ class SevenSegmentAccountNumberEntryTest{
         assertThat(result, isEqualTo("000000000"))
     }
 
+    @Test
+    fun getAccountNumber_given_sevenSegmentEntryContainOnlyOnes_then_recognizeAccountNumber(){
+        val line1 : String = "                           "
+        val line2 : String = "  |  |  |  |  |  |  |  |  |"
+        val line3 : String = "  |  |  |  |  |  |  |  |  |"
+
+        val result = SevenSegmentAccountNumberEntry(line1,line2,line3).getAccountNumber()
+
+        assertThat(result, isEqualTo("111111111"))
+    }
+
 }
 
